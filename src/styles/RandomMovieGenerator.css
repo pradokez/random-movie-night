@@ -26,7 +26,6 @@ h1 {
     font-family: Holtwood One SC;
     font-size: 110px;
     font-weight: 400;
-    letter-spacing: 0em;
     text-align: left;
     width: 60vw;
     margin-top: 10vh;
@@ -43,6 +42,9 @@ h1 {
     bottom: 0;
     z-index: -1;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* 
