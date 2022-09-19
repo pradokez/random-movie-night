@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@600&family=Holtwood+One+SC&display=swap');
+@import-normalize;
+
+html {
+    background-color: #1E1E1E;
+}
+
+.App {
+    height: 100vh;
+}
+
+.container {
+    margin: 0 8vw 0 8vw;
+}
+
+.App-header{
+    display: flex;
+}
+
+h1, h2, span, p {
+    color: #FFB703;
+} 
+
+
+h1 {
+    font-family: Holtwood One SC;
+    font-size: 110px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 60vw;
+    margin-top: 10vh;
+}
+
+.popcorn {
+    margin-top: 18.5vh;
+}
+
+.bar {
+    background-color: #161616;
+    height: 30vh;
+    width: 100vw;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+/* 
+
+
+
+.movie-content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+h2, span {
+    font-family: 'MuseoModerno', cursive;
+}
+
+
+p{
+    font-family: 'Anek Tamil', sans-serif;
+}
+
+
+.poster {
+    width: 300px;
+    height: 450px;
+}
+
+ */
