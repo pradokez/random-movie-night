@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/Button.css"
 
-function Button(props){
+const Button = (props) => {
 return(
     <div>
-        <button autofocus>{props.action}</button>
+        <button onClick={props.function}>{props.action}</button>
     </div>
 )
 }

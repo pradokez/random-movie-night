@@ -35,6 +35,11 @@ h1 {
     margin-top: 18.5vh;
 }
 
+.poster {
+    width: 300px;
+    height: 450px;
+}
+
 .bar {
     background-color: #161616;
     height: 30vh;
