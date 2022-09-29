@@ -4,7 +4,7 @@ import "../styles/Button.css"
 const Button = (props) => {
 return(
     <div>
-        <button onClick={props.function}>{props.action}</button>
+        <button onClick={props.action}>{props.name}</button>
     </div>
 )
 }
