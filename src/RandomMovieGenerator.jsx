@@ -1,7 +1,9 @@
 import "./styles/RandomMovieGenerator.css";
 import popcorn from "./popcorn.png";
 import Button from "./components/Button";
+import Teste from "./MovieDatabase";
 import { useState, useEffect } from "react";
+import MovieDatabase from "./MovieDatabase";
 
 // TODO: show genre on screen
 // TODO: hide API key
@@ -17,30 +19,12 @@ const RandomMovieGenerator = () => {
 
   useEffect(()=>{
     const pickRandomMovie = async () => {
-      try {
-        const response = await fetch(
-          `https://streaming-availability.p.rapidapi.com/search/basic?country=br&service=${randomStreaming}&type=movie&page=${randomPage}`,
-          options
-        );
-        const data = await response.json();
-        const results = await data.results;
-        setMovie(results[randomize(results)]);
-        setPoster(movie.posterURLs.original);
-      } catch (err) {
-        console.error(err);
-      }
-      console.log(movie)
+      
     };
     pickRandomMovie();
   }, [setMovie])
 
-  const options = {
-    method: "GET",
-    headers: {
-      'X-RapidAPI-Key': 'e3d485b5d9msh3e3a2f06d0f912ep111791jsnd7e62dbf62bb',
-      "X-RapidAPI-Host": "streaming-availability.p.rapidapi.com",
-    },
-  };
+
 
   function randomize(array) {
     return Math.floor(Math.random() * array.length);
@@ -59,6 +43,7 @@ const RandomMovieGenerator = () => {
 
   return (
     <div className="App">
+      <MovieDatabase/>
       <div className="container">
         {!started && (
           <header className="App-header">
