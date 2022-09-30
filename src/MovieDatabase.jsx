@@ -6,7 +6,6 @@ const MovieDatabase = () => {
       "X-RapidAPI-Host": "streaming-availability.p.rapidapi.com",
     },
   };
-
   function randomize(array) {
     return Math.floor(Math.random() * array.length);
   }

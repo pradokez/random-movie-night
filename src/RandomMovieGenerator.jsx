@@ -24,16 +24,6 @@ const RandomMovieGenerator = () => {
     pickRandomMovie();
   }, [setMovie])
 
-
-
-  function randomize(array) {
-    return Math.floor(Math.random() * array.length);
-  }
-
-  const streamings = ["disney", "netflix", "prime", "hbo"];
-  const randomStreaming = streamings[randomize(streamings)];
-  const randomPage = Math.floor(Math.random() * 25);
-
   function start() {
     setStarted(true);
     
