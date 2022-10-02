@@ -1,4 +1,6 @@
-const MovieDatabase = () => {
+
+
+const CreateMovieDatabase = () => {
   const options = {
     method: "GET",
     headers: {
@@ -23,8 +25,6 @@ const MovieDatabase = () => {
       const data = await response.json();
       const totalPages = await data.total_pages;
       const results = await data.results;
-      console.save(data)
-    
     } catch (err) {
       console.error(err);
     }
@@ -36,5 +36,5 @@ const MovieDatabase = () => {
 
 }
 
-export default MovieDatabase;
+export default CreateMovieDatabase;
     

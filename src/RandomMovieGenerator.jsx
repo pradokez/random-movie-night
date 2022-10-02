@@ -1,9 +1,8 @@
 import "./styles/RandomMovieGenerator.css";
 import popcorn from "./popcorn.png";
 import Button from "./components/Button";
-import Teste from "./MovieDatabase";
 import { useState, useEffect } from "react";
-import MovieDatabase from "./MovieDatabase";
+import CreateMovieDatabase from "./components/MovieDatabase";
 
 // TODO: show genre on screen
 // TODO: hide API key
@@ -33,7 +32,6 @@ const RandomMovieGenerator = () => {
 
   return (
     <div className="App">
-      <MovieDatabase/>
       <div className="container">
         {!started && (
           <header className="App-header">
@@ -55,9 +53,8 @@ const RandomMovieGenerator = () => {
           </div>
         )}
       </div>
-      <Button name="Start" action=""/>
         <div className="bar">
-          {/* { !started && <Button action="Start"/>} */}
+          { !started && <Button action="Start"/>}
         </div>
     </div>
   );
