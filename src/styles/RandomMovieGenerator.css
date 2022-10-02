@@ -3,6 +3,9 @@
 
 html {
     background-color: #1E1E1E;
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 .App {
@@ -10,7 +13,7 @@ html {
 }
 
 .container {
-    margin: 0 8vw 0 8vw;
+    margin: 0 6vw 0 6vw;
 }
 
 .App-header {
@@ -27,41 +30,41 @@ p {
 
 h1 {
     font-family: Holtwood One SC;
-    font-size: 110px;
+    font-size: 8rem;
     font-weight: 400;
     text-align: left;
     width: 60vw;
-    margin-top: 10vh;
+    margin: 10vh 0 0 0;
+    height: 5vh;
 }
 
 .popcorn {
-    margin-top: 18.5vh;
+    margin-top: 8.9vh;
+    margin-left: -5vw;
 }
 
 .poster {
     width: 300px;
     height: 450px;
     border: 10px solid #FFB703;
-    margin-top: 10vh;
+    margin-top: 8vh;
 }
 
 .movie-content {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .bar {
     background-color: #161616;
-    height: 25vh;
+    position: fixed;
+    height: 28vh;
     width: 100vw;
     bottom: 0;
     z-index: -1;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
 }
 
 .title {
@@ -70,7 +73,7 @@ h1 {
     font-weight: 400;
     color: #FFB703;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0;
+    margin: 3vh 0 0 0;
 
 }
 
@@ -81,39 +84,3 @@ h1 {
     width: 30vw;
     color: #FBFAFA;
 }
-
-/* 
-
-
-
-.movie-content{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    flex-direction: column;
-}
-
-
-
-
-
-
-
-
-h2, span {
-    font-family: 'MuseoModerno', cursive;
-}
-
-
-p{
-    font-family: 'Anek Tamil', sans-serif;
-}
-
-
-.poster {
-    width: 300px;
-    height: 450px;
-}
-
- */
