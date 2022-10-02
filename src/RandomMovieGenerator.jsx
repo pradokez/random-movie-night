@@ -10,25 +10,18 @@ import CreateMovieDatabase from "./components/MovieDatabase";
 // TODO: set up start button
 
 const RandomMovieGenerator = () => {
-
   const [movie, setMovie] = useState();
   const [poster, setPoster] = useState(movie);
   const [started, setStarted] = useState(true);
-  
 
-  useEffect(()=>{
-    const pickRandomMovie = async () => {
-      
-    };
+  useEffect(() => {
+    const pickRandomMovie = async () => {};
     pickRandomMovie();
-  }, [setMovie])
+  }, [setMovie]);
 
   function start() {
     setStarted(true);
-    
   }
-
-  
 
   return (
     <div className="App">
@@ -47,15 +40,25 @@ const RandomMovieGenerator = () => {
         {started && (
           <div className="movie-content">
             <span className="streaming"></span>
-            <img className="poster" alt="movie poster" src={poster} />
-            <h2 className="title">{console.log(movie)}</h2>
-            <p className="overview"></p>
+            <img
+              className="poster"
+              alt="movie poster"
+              src="https://m.media-amazon.com/images/M/MV5BOTJiYjBhZDgtMjhiOC00MTIzLThlNGMtMmI1NjIwM2M3YTI5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+            />
+
+            <div className="bar">
+              {!started && <Button action="Start" />}
+              <h2 className="title">The Mummy (1999)</h2>
+              <p className="overview">
+                At an archaeological dig in the ancient city of Hamunaptra, an
+                American serving in the French Foreign Legion accidentally
+                awakens a mummy who begins to wreak havoc as he searches for the
+                reincarnation of his long-lost love.
+              </p>
+            </div>
           </div>
         )}
       </div>
-        <div className="bar">
-          { !started && <Button action="Start"/>}
-        </div>
     </div>
   );
 };
