@@ -17,7 +17,7 @@ const RandomMovieGenerator = () => {
   const options = {
     method: "GET",
     headers: {
-      'X-RapidAPI-Key': 'e3d485b5d9msh3e3a2f06d0f912ep111791jsnd7e62dbf62bb',
+      'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
       "X-RapidAPI-Host": "streaming-availability.p.rapidapi.com",
     },
   };
@@ -39,7 +39,6 @@ const RandomMovieGenerator = () => {
           const data = await response.json();
           const results = await data.results;
           setMovie(results[randomize(results)]);
-          console.log(movie, poster) 
           setPoster(movie.posterURLs.original);
           setTitle(movie.title);
           setYear(movie.year);
